@@ -2,73 +2,7 @@
 Telegram Bot - Scrape Telegram Members and Add to your Group and Send to Bulk SMS All Scraped Members
  @SeaUDorn
  
-[Environment Setup:]
-Download and Install Python:
 
-[Visit] python.org/downloads to download and install Python for your operating system.
-Set up the Python environment path in Windows, Linux, or macOS.
-Download and Install VS Code:
-
-Visit code.visualstudio.com/download to download and install VS Code for your operating system.
-Create Python Virtual Environment:
-
-Open your terminal in the project directory or Open the project directory in VS code.
-Run the command: python -m venv env to create a virtual environment.
-Activate the environment :
-
-Windows: .\env\Scripts\activate
-Linux or macOS: source env/bin/activate
-Install Project Dependencies:
-
-Run: pip install -r requirements.txt to install project dependencies.
-Create Telegram API Token:
-
-Go to my.telegram.org/auth.
-Enter your phone number and set up the API information to generate an API token.
-Documentation:
-Step 1: Setup Accounts
-
-Open the terminal in the project directory.
-Run python authenticate.py.
-Choose option 1 to enter new accounts.
-Enter Api id, Api hash, and phone number.
-If adding more accounts, enter 'y'; if not, enter 'n'.
-Choose option 2 to filter all banned accounts.
-Choose option 3 to show all accounts.
-Choose option 4 to delete accounts.
-Step 2: Scraping Members
-
-Run python member_scraper.py in the terminal.
-Choose an account to scrape.
-Choose to scrape from a public or private group.
-PUBLIC GROUPS: Suppose public group username is @PythonHub. Enter only 'PythonHub'. Omit '@' and hit enter
-PRIVATE GROUPS: Copy invite link and paste in the terminal and hit enter.
-Choose whether to filter active users.
-Step 3: Adding Members
-
-Launch python member_adder.py in the terminal.
-It'll create sessions and prompt for a login code if not logged in.
-Enter the username of the public group without '@'.
-Enter the number of accounts to use.
-Read the warning and press enter to proceed.
-It'll add members using the specified accounts.
-Troubleshooting:
-
-Members Not Getting Added:
-
-It may be due to account limitations. Try using other accounts.
-Error While Logging In:
-
-If you have two-factor authentication enabled, turn it off. You can turn it back on after logging in.
-For any problems, open an issue on GitHub or contact the developer via the Telegram group mentioned in the README.md.
-
-Step 4: Send Bulk Messages
-
-Launch python bulk_sms.py in the terminal.
-Select the number and enter.
-Choose the option to send a message based on the member's username or user ID.
-It will send the message to all members in the group.
-Ensure to follow the documentation properly for smooth execution of the project.
 Authors
 @SeaUDorn
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Environment Setup:</h2><a id="user-content-environment-setup" class="anchor" aria-label="Permalink: Environment Setup:" href="#environment-setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
@@ -202,7 +136,7 @@ Authors
 </table></markdown-accessiblity-table>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Authors</h2><a id="user-content-authors" class="anchor" aria-label="Permalink: Authors" href="#authors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <ul dir="auto">
-<li><a href="https://www.github.com/shamimkhaled">@shamimkhaled</a></li>
+<li><a href="https://www.github.com/shamimkhaled">@SeaUDorn</a></li>
 </ul>
 </article></div></div></div></div></div> <!-- --> <!-- --> <script type="application/json" id="__PRIMER_DATA_:R0:__">{"resolvedServerColorMode":"day"}</script></div>
 </react-partial>
@@ -250,92 +184,12 @@ Authors
     <a href="/shamimkhaled/telegram-scraping-adding-and-bulk-sms-bot/stargazers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-2">
     <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
 </svg>
-      <strong>4</strong>
-      stars</a>  </div>
-
-  <h3 class="sr-only">Watchers</h3>
-  <div class="mt-2">
-    <a href="/shamimkhaled/telegram-scraping-adding-and-bulk-sms-bot/watchers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye mr-2">
-    <path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path>
-</svg>
-      <strong>2</strong>
-      watching</a>  </div>
-
-  <h3 class="sr-only">Forks</h3>
-  <div class="mt-2">
-    <a href="/shamimkhaled/telegram-scraping-adding-and-bulk-sms-bot/forks" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2">
-    <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
-</svg>
-      <strong>4</strong>
-      forks</a>  </div>
-
-    <div class="mt-2">
-      <a class="Link--muted" href="/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fshamimkhaled%2Ftelegram-scraping-adding-and-bulk-sms-bot&amp;report=shamimkhaled+%28user%29">
-          Report repository
-</a>    </div>
-</div>
-
-          </div>
-        </div>
-
-        
-            <div class="BorderGrid-row">
-              <div class="BorderGrid-cell">
-                <h2 class="h4 mb-3" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame">
-  <a href="/shamimkhaled/telegram-scraping-adding-and-bulk-sms-bot/releases" data-view-component="true" class="Link--primary no-underline Link">Releases</a></h2>
-
-    <div class="text-small color-fg-muted">No releases published</div>
-
-              </div>
-            </div>
-
-        
-        
-            <div class="BorderGrid-row">
-              <div class="BorderGrid-cell">
-                
-  <h2 class="h4 mb-3">
-  <a href="/users/shamimkhaled/packages?repo_name=telegram-scraping-adding-and-bulk-sms-bot" data-view-component="true" class="Link--primary no-underline Link d-flex flex-items-center">Packages
-      <span title="0" hidden="hidden" data-view-component="true" class="Counter ml-1">0</span></a></h2>
-
-
-      <div class="text-small color-fg-muted" >
-        No packages published <br>
-      </div>
-
-
-
-              </div>
-            </div>
-
-        
-            <div class="BorderGrid-row" hidden>
-              <div class="BorderGrid-cell">
-                <include-fragment src="/shamimkhaled/telegram-scraping-adding-and-bulk-sms-bot/used_by_list" accept="text/fragment+html">
-</include-fragment>
-              </div>
-            </div>
+ 
 
         
         
         
-            <div class="BorderGrid-row">
-              <div class="BorderGrid-cell">
-                <h2 class="h4 mb-3">Languages</h2>
-<div class="mb-2">
-  <span data-view-component="true" class="Progress">
-    <span style="background-color:#3572A5 !important;;width: 100.0%;" itemprop="keywords" data-view-component="true" class="Progress-item color-bg-success-emphasis"></span>
-</span></div>
-<ul class="list-style-none">
-    <li class="d-inline">
-        <a class="d-inline-flex flex-items-center flex-nowrap Link--secondary no-underline text-small mr-3" href="/shamimkhaled/telegram-scraping-adding-and-bulk-sms-bot/search?l=python"  data-ga-click="Repository, language stats search click, location:repo overview">
-          <svg style="color:#3572A5;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill mr-2">
-    <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
-</svg>
-          <span class="color-fg-default text-bold mr-1">Python</span>
-          <span>100.0%</span>
-        </a>
-    </li>
-</ul>
+
+
 
               </div>
