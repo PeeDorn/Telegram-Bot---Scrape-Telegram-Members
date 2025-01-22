@@ -1,6 +1,8 @@
 # Telegram-Bot---Scrape-Telegram-Members
-Telegram Bot - Scrape Telegram Members and Add to your Group and Send to Bulk SMS All Scraped Members @SeaUDorn
-Environment Setup:
+Telegram Bot - Scrape Telegram Members and Add to your Group and Send to Bulk SMS All Scraped Members
+ @SeaUDorn
+ 
+[Environment Setup:]
 Download and Install Python:
 
 Visit python.org/downloads to download and install Python for your operating system.
